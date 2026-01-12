@@ -170,6 +170,7 @@ function renderAppShell(currentRoute: Route): string {
           <a href="#tasks" class="header__nav-link" data-route="tasks">Tasks</a>
           <a href="#habits" class="header__nav-link" data-route="habits">Habits</a>
           <a href="#meetings" class="header__nav-link" data-route="meetings">Meetings</a>
+          <a href="#group" class="header__nav-link" data-route="group">Group</a>
         </nav>
 
         <div class="header__actions">
