@@ -98,7 +98,7 @@ function set<T>(key: string, value: T): void {
 // Objectives
 // ============================================
 
-export interface StoredObjective extends Omit<Objective, 'key_results'> {
+export interface StoredObjective extends Omit<Objective, 'key_results' | 'category'> {
   id: string;
   quarter_id: string;
   title: string;

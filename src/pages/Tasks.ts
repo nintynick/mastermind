@@ -21,6 +21,7 @@ import type { TaskStatus } from '../types';
 
 const STATUS_CONFIG: Record<TaskStatus, { label: string; color: string; icon: string }> = {
   planned: { label: 'Planned', color: 'info', icon: '○' },
+  in_progress: { label: 'In Progress', color: 'accent', icon: '◐' },
   completed: { label: 'Completed', color: 'success', icon: '✓' },
   completed_plus: { label: 'Completed+', color: 'success', icon: '✓✓' },
   postponed: { label: 'Postponed', color: 'muted', icon: '→' },

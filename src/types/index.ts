@@ -101,6 +101,7 @@ export interface Task {
 
 export type TaskStatus =
   | 'planned'
+  | 'in_progress'
   | 'completed'
   | 'completed_plus'
   | 'postponed'
@@ -109,6 +110,7 @@ export type TaskStatus =
 
 export const TaskStatusLabels: Record<TaskStatus, string> = {
   planned: 'Planned',
+  in_progress: 'In Progress',
   completed: 'Completed',
   completed_plus: 'Completed+',
   postponed: 'Postponed',
@@ -118,6 +120,7 @@ export const TaskStatusLabels: Record<TaskStatus, string> = {
 
 export const TaskStatusColors: Record<TaskStatus, string> = {
   planned: 'info',
+  in_progress: 'accent',
   completed: 'success',
   completed_plus: 'success',
   postponed: 'muted',
@@ -219,5 +222,6 @@ export interface AppState {
   currentQuarter: Quarter | null;
   currentWeek: Week | null;
   isLoading: boolean;
+  isAuthenticated: boolean;
   error: string | null;
 }

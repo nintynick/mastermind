@@ -43,6 +43,7 @@ export const appStore = new Store<AppState>({
   currentQuarter: DEMO_QUARTER,
   currentWeek: DEMO_WEEK,
   isLoading: false,
+  isAuthenticated: true, // Demo mode
   error: null,
 });
 
